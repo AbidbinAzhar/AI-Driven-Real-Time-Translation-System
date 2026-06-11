@@ -159,12 +159,9 @@ hi_IN
 ```text
 Real-Time-Multilingual-News-Translation/
 │
-├── notebooks/
-│   └── real_time_translation.ipynb
-│
-├── requirements.txt
-│
+├── Real_time_text_tranlation.ipynb
 └── README.md
+└── requirements.txt
 ```
 
 ---
