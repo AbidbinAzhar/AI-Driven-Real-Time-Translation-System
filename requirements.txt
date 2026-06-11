@@ -1,6 +1,6 @@
-pandas
-nltk
-torch
-transformers
-sentencepiece
-requests
+pandas==2.2.2
+requests==2.32.3
+nltk==3.9.1
+transformers==4.44.2
+torch>=2.2.0
+sentencepiece==0.2.0
