@@ -157,19 +157,10 @@ hi_IN
 # Project Structure
 
 ```text
-NewsTranslate-AI/
-│
-├── data/
-│   └── Retrieved news datasets
+Real-Time-Multilingual-News-Translation/
 │
 ├── notebooks/
-│   └── Translation experiments
-│
-├── src/
-│   ├── data_collection.py
-│   ├── preprocessing.py
-│   ├── translation.py
-│   └── utils.py
+│   └── real_time_translation.ipynb
 │
 ├── requirements.txt
 │
