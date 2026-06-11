@@ -156,27 +156,6 @@ pip install transformers sentencepiece torch
 
 ---
 
-## API Configuration
-
-Create a RapidAPI account and obtain your API key.
-
-Replace:
-
-```python
-'x-rapidapi-key': "YOUR_API_KEY"
-```
-
-with your own API key before executing the pipeline.
-
-For production deployments, environment variables are recommended:
-
-```python
-import os
-
-API_KEY = os.getenv("RAPIDAPI_KEY")
-```
-
----
 
 ## Usage
 
