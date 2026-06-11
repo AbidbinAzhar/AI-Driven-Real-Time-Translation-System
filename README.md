@@ -111,7 +111,7 @@ Hindi Translation Output
 ## Project Structure
 
 ```text
-NewsTranslate-AI/
+AI-Driven-Real-Time-Translation-System/
 │
 ├── data/
 │   └── News datasets
