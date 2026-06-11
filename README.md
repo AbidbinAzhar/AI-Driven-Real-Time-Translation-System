@@ -1,175 +1,131 @@
 # AI-Driven-Real-Time-Translation-System
 
-## Multilingual Business News Translation Pipeline Using Google News API and mBART
+# NewsTranslate-AI
 
-NewsTranslate-AI is a Natural Language Processing (NLP) pipeline that automatically retrieves real-time business news articles, preprocesses textual content, and generates Hindi translations using Meta's multilingual mBART transformer model.
+## Real-Time Multilingual News Processing Pipeline Using Google News API and Transformer Models
 
-The project demonstrates an end-to-end workflow for multilingual information processing by integrating live news acquisition, text normalization, and neural machine translation. It serves as a practical example of applying transformer-based NLP models to improve accessibility of business and financial information across language barriers.
+NewsTranslate-AI is an end-to-end NLP pipeline that automates the collection, preprocessing, and translation of real-time business news articles. The system integrates external news APIs with transformer-based neural machine translation models to deliver automated English-to-Hindi translations of live business and financial news content.
 
----
-
-# Scientific Motivation
-
-Business and financial news play a critical role in decision-making for investors, organizations, and the general public. However, a substantial portion of online news content is published primarily in English, limiting accessibility for non-English-speaking audiences.
-
-Recent advances in multilingual transformer architectures have enabled effective machine translation across multiple languages. This project explores the integration of real-time news retrieval and transformer-based translation to automatically generate Hindi translations of English business news content.
-
-The pipeline provides a reproducible framework for:
-
-* Automated collection of real-time business news
-* Text preprocessing and normalization
-* Transformer-based machine translation
-* Cross-lingual information access
-* Educational and research-oriented NLP experimentation
+Developed as part of a software engineering workflow, the project demonstrates API integration, data processing, natural language preprocessing, and deployment of state-of-the-art multilingual transformer models for automated language localization.
 
 ---
 
-# Project Objectives
+## Project Overview
 
-The primary objectives of this project are:
+Access to timely business and financial news is critical for informed decision-making. However, much of this information is published primarily in English, creating accessibility challenges for non-English-speaking audiences.
 
-* Retrieve business news articles from online sources in real time
-* Process and clean raw textual content
-* Translate English news content into Hindi
-* Demonstrate the application of multilingual transformer models
-* Build a modular NLP workflow that can be extended to additional languages and domains
+This project addresses that challenge by building a scalable pipeline that:
+
+* Retrieves real-time business news articles
+* Cleans and preprocesses textual data
+* Performs neural machine translation
+* Generates Hindi translations automatically
+* Provides a reusable framework for multilingual news processing
+
+The system showcases practical applications of Natural Language Processing (NLP), API integration, and transformer-based AI models in real-world software engineering environments.
 
 ---
 
-# Key Features
+## Engineering Highlights
 
-* Real-time business news retrieval through Google News API (RapidAPI)
-* Automated JSON parsing and structured dataset creation
-* Text preprocessing and normalization pipeline
-* News article search and selection functionality
+* Designed a modular Python-based ETL pipeline for news processing
+* Integrated third-party APIs for real-time data ingestion
+* Automated JSON parsing and dataset generation
+* Implemented text normalization and preprocessing workflows
+* Built multilingual translation functionality using Hugging Face Transformers
+* Leveraged Meta's mBART-50 model for neural machine translation
+* Structured the application for maintainability and future language expansion
+* Developed reusable components for scalable NLP workflows
+
+---
+
+## Key Features
+
+* Real-time business news retrieval via Google News API
+* Automated data cleaning and preprocessing
+* News article filtering and retrieval by title
 * English-to-Hindi translation using mBART-50
-* Transformer-based neural machine translation workflow
-* Modular Python implementation
-* Reproducible NLP pipeline
+* Transformer-based neural machine translation
+* Pandas-powered data processing pipeline
+* Modular architecture for future enhancements
+* Easily extensible to additional languages
 
 ---
 
-# Workflow
+## System Architecture
 
 ```text
+User Request
+      │
+      ▼
 Google News API
-        │
-        ▼
- News Retrieval
-        │
-        ▼
- JSON Processing
-        │
-        ▼
- Dataset Creation
-        │
-        ▼
- Text Cleaning
-        │
-        ▼
- Article Selection
-        │
-        ▼
- mBART Tokenization
-        │
-        ▼
- English → Hindi Translation
-        │
-        ▼
- Translated Output
+      │
+      ▼
+JSON Response Processing
+      │
+      ▼
+Pandas Data Pipeline
+      │
+      ▼
+Text Cleaning & Normalization
+      │
+      ▼
+Article Selection
+      │
+      ▼
+mBART Translation Engine
+      │
+      ▼
+Hindi Translation Output
 ```
 
 ---
 
-# Dataset Characteristics
+## Technology Stack
 
-Source:
-
-* Google News API (RapidAPI)
-
-Domain:
-
-* Business and Financial News
-
-Input Language:
-
-* English
-
-Target Language:
-
-* Hindi
-
-Data Format:
-
-* JSON News Articles
-
-The dataset is collected dynamically through API requests and therefore varies depending on retrieval time and news availability.
-
----
-
-# Model Selection
-
-This project utilizes:
-
-**facebook/mbart-large-50-one-to-many-mmt**
-
-mBART was selected because it is a multilingual sequence-to-sequence transformer model trained on multiple languages, including English and Hindi. The model enables direct multilingual translation without requiring separate language-specific architectures.
-
-Source Language Code:
-
-```text
-en_XX
-```
-
-Target Language Code:
-
-```text
-hi_IN
-```
-
----
-
-# Technologies Used
-
-## Programming & Data Processing
+### Programming Language
 
 * Python
+
+### Data Processing
+
 * Pandas
 * JSON
 
-## Natural Language Processing
+### Natural Language Processing
 
 * NLTK
 * Regular Expressions (Regex)
 
-## Deep Learning
+### Machine Learning
 
 * Hugging Face Transformers
 * PyTorch
-* mBART-50
+* mBART-50 Large Multilingual Model
 
-## Data Source
+### APIs
 
-* Google News API (RapidAPI)
+* RapidAPI
+* Google News API
 
 ---
 
-# Project Structure
+## Project Structure
 
 ```text
 NewsTranslate-AI/
 │
 ├── data/
-│   └── Retrieved news datasets
-│
-├── notebooks/
-│   └── Translation experiments
+│   └── News datasets
 │
 ├── src/
 │   ├── data_collection.py
 │   ├── preprocessing.py
 │   ├── translation.py
 │   └── utils.py
+│
+├── notebooks/
+│   └── Development experiments
 │
 ├── requirements.txt
 │
@@ -178,7 +134,7 @@ NewsTranslate-AI/
 
 ---
 
-# Installation
+## Installation
 
 Clone the repository:
 
@@ -194,7 +150,7 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Install transformer libraries:
+Install Hugging Face Transformers:
 
 ```bash
 pip install transformers sentencepiece torch
@@ -202,9 +158,9 @@ pip install transformers sentencepiece torch
 
 ---
 
-# API Configuration
+## API Configuration
 
-Create a RapidAPI account and obtain an API key.
+Create a RapidAPI account and obtain your API key.
 
 Replace:
 
@@ -212,49 +168,57 @@ Replace:
 'x-rapidapi-key': "YOUR_API_KEY"
 ```
 
-with your personal API key before running the pipeline.
+with your own API key before executing the pipeline.
+
+For production deployments, environment variables are recommended:
+
+```python
+import os
+
+API_KEY = os.getenv("RAPIDAPI_KEY")
+```
 
 ---
 
-# Usage
+## Usage
 
-### Retrieve News Articles
+### Retrieve Latest Business News
 
-```bash
+```python
 python data_collection.py
 ```
 
-### Preprocess Text
+### Preprocess News Articles
 
-```bash
+```python
 python preprocessing.py
 ```
 
-### Translate News Articles
+### Generate Hindi Translations
 
-```bash
+```python
 python translation.py
 ```
 
 ---
 
-# Example Translation
+## Example Translation
 
 ### Input (English)
 
 ```text
-stocks rallied as investors reacted positively to economic data
+Stocks rallied as investors reacted positively to new economic data.
 ```
 
 ### Output (Hindi)
 
 ```text
-आज शेयर बाजार में निवेशकों ने आर्थिक आंकड़ों पर सकारात्मक प्रतिक्रिया दी जिससे बाजार में तेजी देखी गई।
+निवेशकों ने नए आर्थिक आंकड़ों पर सकारात्मक प्रतिक्रिया दी, जिससे शेयर बाजार में तेजी देखी गई।
 ```
 
 ---
 
-# Text Preprocessing
+## Data Preprocessing Pipeline
 
 The preprocessing module performs:
 
@@ -272,7 +236,7 @@ Output:
 Stock Market Today Whats New
 ```
 
-### Lowercase Conversion
+### Lowercase Normalization
 
 Input:
 
@@ -286,80 +250,138 @@ Output:
 stock market today
 ```
 
-These preprocessing steps improve consistency prior to translation.
+These preprocessing steps improve consistency and translation quality.
 
 ---
 
-# Outputs
+## Translation Model
+
+This project utilizes Meta's multilingual transformer:
+
+**facebook/mbart-large-50-one-to-many-mmt**
+
+The model supports translation across 50 languages and provides high-quality contextual translations through sequence-to-sequence neural machine translation.
+
+### Language Configuration
+
+Source Language:
+
+```text
+en_XX
+```
+
+Target Language:
+
+```text
+hi_IN
+```
+
+---
+
+## Outputs
 
 The pipeline generates:
 
-* Retrieved business news articles
-* Cleaned and normalized text datasets
-* English news content
-* Hindi translated news content
-* Structured translation outputs
+### Processed Data
+
+* Cleaned news datasets
+* Structured title and snippet tables
+* Searchable news records
+
+### Translation Outputs
+
+* Hindi-translated news articles
+* Translation dictionaries
+* Model-generated multilingual outputs
 
 ---
 
-# Applications
+## Business Applications
 
-Potential applications include:
+Potential use cases include:
 
-* Multilingual news aggregation platforms
-* Business and financial news translation systems
-* Cross-lingual information access
-* Educational NLP demonstrations
-* Research-oriented multilingual processing workflows
-
----
-
-# Relevance to Multilingual NLP
-
-This project demonstrates the practical application of multilingual transformer models for cross-lingual information processing. The workflow can be extended to support additional languages, multilingual content delivery, and broader NLP applications involving language understanding and translation.
+* Financial news localization platforms
+* Multilingual news aggregation services
+* Media monitoring systems
+* Cross-language content distribution
+* International market intelligence platforms
+* AI-powered news delivery applications
+* Language accessibility solutions
 
 ---
 
-# Limitations
+## Technical Challenges and Solutions
 
-* Translation quality depends on the pretrained model.
-* No domain-specific fine-tuning was performed.
-* Financial terminology may not always be translated optimally.
-* Translation quality has not been formally evaluated using automated metrics.
+### Challenge
 
----
+News articles arrive in unstructured JSON formats with inconsistent text quality.
 
-# Future Work
+### Solution
 
-* Support additional Indian languages
-* Integrate sentiment analysis
-* Add topic classification
-* Perform translation quality evaluation
-* Develop a Streamlit-based web interface
-* Explore domain-specific model fine-tuning
+Implemented automated preprocessing including punctuation removal, normalization, and structured dataset generation.
 
----
+### Challenge
 
-# Reproducibility
+Supporting multilingual translation while preserving contextual meaning.
 
-This project promotes reproducibility through:
+### Solution
 
-* Open-source implementation
-* Fixed dependency versions
-* Publicly accessible APIs
-* Modular architecture
-* Deterministic processing workflow
+Integrated Meta's mBART-50 multilingual transformer model for context-aware neural machine translation.
+
+### Challenge
+
+Building a reusable workflow for future language expansion.
+
+### Solution
+
+Designed a modular architecture separating ingestion, preprocessing, and translation components.
 
 ---
 
-# Disclaimer
+## Future Enhancements
 
-This project is intended for educational, research, and demonstration purposes. Translation quality may vary depending on article complexity and model limitations.
+* Multi-language translation support
+* Sentiment analysis integration
+* Topic classification
+* Named Entity Recognition (NER)
+* Translation quality evaluation metrics
+* Streamlit-based web interface
+* Docker deployment
+* Real-time dashboard visualization
+* GPU-optimized inference
 
 ---
 
-# Citation
+## Reproducibility
+
+The project supports reproducible execution through:
+
+* Version-controlled source code
+* Fixed dependency management
+* Public API-based data retrieval
+* Modular software architecture
+* Deterministic processing workflows
+
+---
+
+## Intended Use
+
+This project was developed as a software engineering and NLP application to demonstrate real-time data ingestion, language processing, and AI-powered translation workflows.
+
+It is intended for educational, research, and prototype development purposes.
+
+---
+
+## Author
+
+**Arif Bin Azhar**
+
+Software Engineer | Bioinformatics Researcher | AI & Data Science Enthusiast
+
+---
+
+## Citation
 
 If you use this project, please cite:
 
-**Azhar, A. B. (2026). NewsTranslate-AI: Multilingual Business News Translation Pipeline Using mBART. GitHub Repository.**
+**Azhar AB.** NewsTranslate-AI: Real-Time Multilingual News Processing Pipeline Using Transformer Models. GitHub, 2026.
