@@ -1,6 +1,6 @@
-# AI-Driven-Real-Time-Translation-System
+# NewsTranslate-AI
 
-## Multilingual Business News Translation Pipeline Using Google News API and mBART
+## NewsTranslate-AI: Real-Time Multilingual News Translation Using Transformer-Based Language Models
 
 NewsTranslate-AI is a Natural Language Processing (NLP) pipeline that automatically retrieves real-time business news articles, preprocesses textual content, and generates Hindi translations using Meta's multilingual mBART transformer model.
 
@@ -348,4 +348,6 @@ This project is intended for educational, research, and demonstration purposes. 
 
 If you use this project, please cite:
 
-**Azhar, A. B. (2026). NewsTranslate-AI: Multilingual Business News Translation Pipeline Using mBART. GitHub Repository.**
+**Azhar, A. B. (2026).
+NewsTranslate-AI: Real-Time Multilingual News Translation Using Transformer-Based Language Models.
+GitHub Repository.**
