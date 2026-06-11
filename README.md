@@ -1,7 +1,5 @@
 # AI-Driven-Real-Time-Translation-System
 
-# NewsTranslate-AI
-
 ## Real-Time Multilingual News Processing Pipeline Using Google News API and Transformer Models
 
 NewsTranslate-AI is an end-to-end NLP pipeline that automates the collection, preprocessing, and translation of real-time business news articles. The system integrates external news APIs with transformer-based neural machine translation models to deliver automated English-to-Hindi translations of live business and financial news content.
